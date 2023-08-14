@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} 
+
+h1 {
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+.parentSquare {
+  background-color: black;
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 10px 2px rgb(90, 90, 90) inset;
+}
+
+.Blue {
+  width: 30vh;
+  height: 30vh;
+  background-color: blue;
+  border-radius: 15px;
+  box-shadow: 0 0 25px blue;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Blue:hover {
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 0 30px blue;
+}
+
+.Blue:active {
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 0 35px blue;
+}
+
+.Red {
+  width: 30vh;
+  height: 30vh;
+  background-color: red;
+  border-radius: 15px;
+  box-shadow: 0 0 25px red;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Red:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+  box-shadow: 0 0 30px red;
+}
+
+.Red:active {
+  transform: scale(1.05);
+  opacity: 1;
+  box-shadow: 0 0 35px red;
+}
