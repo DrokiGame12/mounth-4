@@ -1,0 +1,26 @@
+::-webkit-scrollbar 
+    width: 10px
+    background: black
+    &-track
+        background: black
+        border-radius: 5px
+        box-shadow: inset 0 0 5px rgba(255, 255, 0, 1)
+    &-thumb
+        background: black
+        border: 1px solid orange
+        border-radius: 5px
+        box-shadow: inset 0 0 5px orange
+        transition: 0.1s
+        &:hover
+            background: yellow
+
+.pokemon_page
+    background-color: black
+    display: flex
+    flex-direction: column
+    align-items: center
+    min-height: 100vh
+
+.loading_img
+    width: calc( 100vh - 150px )
+    height: calc( 100vh - 150px )

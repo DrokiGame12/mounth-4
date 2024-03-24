@@ -87,7 +87,7 @@ const MainPage = () => {
             <Button title={'GetLocalStorage'} action={getLocalStorage}/>
             <Button title={'ClearTasks'} action={clearTasks}/>
             <label>
-                Filter: 
+                Filter:
                 <select onChange={event => setFilterValue(event.target.value)}>
                     <option value={'allTasks'}>Все таски</option>
                     <option value={'completedTasks'}>Выполненные таски</option>
