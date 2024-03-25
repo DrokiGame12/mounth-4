@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import TodoList from '../../components/TodoList/TodoList';
 
 const TodoPage = () => {
@@ -7,19 +7,16 @@ const TodoPage = () => {
             id:1 ,
             title: 'coding',
             completed: false,
-            editing: false
         },
         {
             id:4,
             title: 'eat',
             completed: false,
-            editing: false
         },
         {
             id:5,
             title: 'sleep',
             completed: false,
-            editing: false
         }
     ])
 
@@ -37,17 +34,19 @@ const TodoPage = () => {
         setTasks([...tasks, {
             id: tasks.length > 0 ? tasks[tasks.length-1].id+1 : 1,
             title: inputTask,
-            completed: false,
-            editing: false
+            completed: false
         }])
     }
 
-    const handleDone = () => {
-        
+    const handleEdit = (id, newTitle) => {
+        setTasks(tasks.map(task => {
+            return task.id === id ? {...task, title: newTitle} : task
+        }))
     }
-
-    const handleEdit = (id, inputEdit) => {
-        
+    const handleDone = (id) => {
+        setTasks(tasks.map(task => {
+            return task.id===id ? {...task, completed:!task.completed} : task
+        }))
     }
 
     return (
