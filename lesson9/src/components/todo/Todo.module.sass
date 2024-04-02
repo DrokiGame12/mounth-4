@@ -1,0 +1,56 @@
+.todo
+	display: flex
+	justify-content: space-between
+	.name 
+		width: 440px
+		border: 1px solid #fff
+		border-radius: 12px
+		*
+			margin: 16px
+		input
+			border: none
+			background-color: #000
+			&:focus
+				outline: none
+	.buttons
+		width: 128px
+		display: flex
+		gap: 20px
+		button
+			cursor: pointer
+			width: 100%
+			background-color: #000
+			color: #000
+			border: 1px solid #fff
+			border-radius: 12px
+			&:hover:enabled
+				background-color: #DB00FF
+				color: #fff
+			&:active:enabled
+				box-shadow: inset 0 0 20px #2B0032D9
+			&[disabled]
+				cursor: default
+				border-color: #9F9F9F
+				color: #9E9E9E
+	.buttons_edit
+		width: 210px
+		display: flex
+		gap: 10px
+		button
+			cursor: pointer
+			width: 100%
+			background-color: #fff
+			color: #000
+			border: 1px solid #DB00FF
+			border-radius: 12px
+			&:hover:enabled
+				background-color: #DB00FF
+				color: #fff
+			&:active:enabled
+				box-shadow: inset 0 0 20px #2B0032D9
+			&[disabled]
+				cursor: default
+				border-color: #9F9F9F
+				color: #9E9E9E
+
+						
