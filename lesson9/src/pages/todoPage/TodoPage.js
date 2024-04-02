@@ -47,7 +47,7 @@ const TodoPage = () => {
 							/>
 					</label>
 					<div className={classes.buttons}>
-						<button disabled={!inputValue} onClick={handleAdd}>Add task</button>
+						<button disabled={!inputValue} onClick={handleAdd}>{todoList.length!==0 ? 'Add' : 'Add task'}</button>
 						{todoList.length!==0 && <button onClick={handleClear}>Clear all</button>}
 					</div>
 				</div>
